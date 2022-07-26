@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../const/constants.dart';
 
+import '../../../responsive/responsive.dart';
+import '../banner/banner_section.dart';
+import '../banner/mob_banner.dart';
 import 'header.dart';
 
 class HeaderContainer extends StatelessWidget {
@@ -24,7 +27,7 @@ class HeaderContainer extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-               // Responsive.isDesktop(context) ? BannerSection() : MobBanner(),
+                Responsive.isDesktop(context) ? BannerSection() : MobileBanner(),
               ],
             ),
           ),
