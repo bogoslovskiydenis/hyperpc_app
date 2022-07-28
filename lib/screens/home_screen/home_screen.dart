@@ -3,6 +3,7 @@ import 'package:hyperpc_app/screens/componetns/header/header_container.dart';
 import 'package:hyperpc_app/screens/componetns/header/mobile_menu/mobile_menu.dart';
 
 import '../../const/constants.dart';
+import '../componetns/body/body_container.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -47,6 +48,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             children: const [
               HeaderContainer(),
+              BodyContainer(),
             ],
           ),
         ),
